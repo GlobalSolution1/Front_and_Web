@@ -1,5 +1,10 @@
+body{
+    padding: 0;
+    margin: 0;
+}
 #preloader {
-    background: url(../src/assets/img/preloader/whale.gif) no-repeat center center;
+    background: url(../assets/img/preloader/whale.gif) no-repeat center center;
+
     height: 100vh;
     width: 100%;
     position: fixed;
@@ -12,4 +17,59 @@
     0% { background-color: rgb(12, 20, 62); }
     50% { background-color: rgb(1, 12, 50); }
     100% { background-color: rgb(21, 15, 54); }
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff;
+}
+
+#logo {
+    width: 70px;
+}
+
+.navbar {
+    flex-grow: 1;
+    text-align: right;
+}
+
+.navlinks {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navlist {
+    margin: 0 10px;
+}
+
+.navlist a {
+    color: #160667;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.navlist a:hover {
+    background-color: #1A2A6C;
+    border-radius: 5px;
+}
+
+video{
+    width:100%;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0C143E;
+    color: #fff;
 }
