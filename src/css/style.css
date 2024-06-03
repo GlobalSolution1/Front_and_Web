@@ -11,7 +11,7 @@
     --primary-font-color: #bfcce3;
 }
 html{
-    font-size: 10px;
+    font-size: 16px;
 }
 
 /*Estilizando e animando o preloader*/
@@ -38,8 +38,8 @@ html{
     align-items: center;
     padding: 10px 20px;
     background-color: var(--primary-background-color);
-    font-size: 1.6rem;
-    
+    font-size: 1.2rem;
+
 }
 
 #logo {
@@ -52,6 +52,7 @@ html{
     display: flex;
     justify-content: space-around;
     text-align: right;
+    z-index: 50;
 }
 
 nav {
@@ -59,6 +60,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   height: 8vh;
+
 }
 
 .mobile-menu{
@@ -92,8 +94,17 @@ nav {
 }
 
 .video-container video {
+    height: 100%;
     width: 100%;
-    height: auto;
+    object-fit: cover;
+    object-position: center;
+    display: block; 
+}
+#videohome{
+  width: 100%;
+  height: 90vh;
+  position: relative;
+  overflow: hidden;
 }
 
 .text-overlay {
@@ -107,16 +118,76 @@ nav {
   max-width: 80%;
   font-weight: bold;
   background-color: rgba(0, 20, 54, 0.4);
+  width: 50%;
+  height: 50%;
 }
 
 .text-overlay h1 {
-  font-size: 8rem;
+  font-size: 3rem;
   margin-bottom: 20px;
 }
 
 .text-overlay p {
   font-size: 3rem;
 }
+
+/*Estlilizando as seções */
+.problem{
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+.problem .content_problem{
+  padding: 50px;
+  background-color: #001436;
+  width: 50%;
+}
+.h1_problem{
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+.text_problem{
+  font-size: 16px;
+  text-align: justify;
+  color: #fff;
+}
+.problem .img_problem{
+  background-size: cover;
+  background-position: center;
+  width: 50%;
+  background: url(../assets/img/home/poluicao.jpg) no-repeat center center;
+}
+
+.list_problem{
+  color: #fff;
+}
+
+#section1{
+  background-color: #121D26;
+}
+
+#section2{
+  background-color: #070A0D;
+}
+
+#section3{
+  background-color: #283540;
+}
+
+#section4{
+  background-color: #626B73;
+}
+
+#section5{
+  background-color: #294c6a;
+}
+
+#section6{
+  background-color: #101e2b;
+}
+
+
 footer {
     text-align: center;
     padding: 20px;
@@ -153,6 +224,7 @@ footer {
     .mobile-menu {
       display: block;
     }
+    
   }
   
   .nav-list.active {

@@ -1,0 +1,33 @@
+#banner {
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    overflow: hidden; /* Garante que a imagem não transborde do contêiner */
+}
+
+/* Estilo para a imagem dentro do contêiner #banner */
+#banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block; 
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    max-width: 80%;
+    font-weight: bold;
+    background-color: rgba(0, 20, 54, 0.4);
+}
+
+.text-overlay h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
