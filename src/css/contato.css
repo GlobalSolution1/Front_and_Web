@@ -12,7 +12,7 @@ textarea {
   font-family: "Poppins", sans-serif;
 }
 
-.container {
+.container-contato {
   position: relative;
   width: 100%;
   min-height: 100vh;
@@ -22,6 +22,7 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 40px;
 }
 
 .form {
@@ -39,6 +40,11 @@ textarea {
 .contact-form {
   background-color: #0c3091;
   position: relative;
+}
+
+.text-contato {
+  margin-top: 30px;
+  font-size: 18px;
 }
 
 .circle {
@@ -82,7 +88,7 @@ form {
 .title {
   color: #fff;
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 2rem;
   line-height: 1;
   margin-bottom: 0.7rem;
 }
@@ -212,10 +218,15 @@ textarea.input {
   margin: 1.5rem 0 2rem 0;
 }
 
+.info {
+  margin-top: 50px;
+}
+
 .information {
   display: flex;
   color: #555;
-  margin: 0.7rem 0;
+
+  margin: 1.5rem 0;
   align-items: center;
   font-size: 0.95rem;
 }
@@ -225,11 +236,11 @@ textarea.input {
   margin-right: 0.7rem;
 }
 
-.social-media {
+.social-media-contato {
   padding: 2rem 0 0 0;
 }
 
-.social-media p {
+.social-media-contato p {
   color: #333;
 }
 
@@ -267,27 +278,7 @@ textarea.input {
   opacity: 0.3;
 }
 
-.big-circle {
-  position: absolute;
-  width: 500px;
-  height: 500px;
-  border-radius: 50%;
-  background: linear-gradient(to bottom, #1cd4af, #0c3091);
-  bottom: 50%;
-  right: 50%;
-  transform: translate(-40%, 38%);
-}
 
-.big-circle:after {
-  content: "";
-  position: absolute;
-  width: 360px;
-  height: 360px;
-  background-color: #fafafa;
-  border-radius: 50%;
-  top: calc(50% - 180px);
-  left: calc(50% - 180px);
-}
 
 .square {
   position: absolute;
@@ -327,17 +318,19 @@ textarea.input {
     right: 50%;
   }
 
-  .text {
-    margin: 1rem 0 1.5rem 0;
+  .text-contato {
+    margin: 2rem 0 1.5rem 0;
+
   }
 
-  .social-media {
+
+  .social-media-contato {
     padding: 1.5rem 0 0 0;
   }
 }
 
 @media (max-width: 480px) {
-  .container {
+  .container-contato {
     padding: 1.5rem;
   }
 

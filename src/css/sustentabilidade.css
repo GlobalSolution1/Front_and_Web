@@ -2,7 +2,8 @@
     width: 100%;
     height: 80vh;
     position: relative;
-    overflow: hidden; /* Garante que a imagem não transborde do contêiner */
+    overflow: hidden;
+    /* Garante que a imagem não transborde do contêiner */
 }
 
 /* Estilo para a imagem dentro do contêiner #banner */
@@ -11,7 +12,7 @@
     height: 100%;
     object-fit: cover;
     object-position: center;
-    display: block; 
+    display: block;
 }
 
 .text-overlay {
