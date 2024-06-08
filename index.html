@@ -1,156 +1,670 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="src/assets/img/icone/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="src/css/style.css">
-    <title>Ocean Shield</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="src/css/swiper-bundle.min.css" />
+        <link rel="shortcut icon" href="src/assets/img/icone/favicon.ico"
+            type="image/x-icon">
+        <link rel="stylesheet" href="src/css/animais.css">
+        <link rel="stylesheet" href="src/css/slide.css">
+        <link rel="stylesheet" href="src/css/contato.css">
+        <link rel='stylesheet'
+            href='https://cdn-uicons.flaticon.com/2.3.0/uicons-brands/css/uicons-brands.css'>
+        <link rel="stylesheet" href="src/css/style.css">
+        <link rel="stylesheet" href="src/css/chart.css">
 
-<body>
-    <div id="preloader"></div>
+        <title>Ocean Shield</title>
+    </head>
 
-    <header id="header">
-        <img src="src/assets/img/logo/logo.png" alt="Logo Ocean Shield" id="logo">
-        <nav class="navbar">
-            <div class="mobile-menu">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-            <ul class="nav-list">
-                <li class="navlink"><a href="index.html">Home</a></li>
-                <li class="navlink"><a href="animais.html">Animais</a></li>
-                <li class="navlink"><a href="sustentabilidade.html">Sustentabilidade</a></li>
-                <li class="navlink"><a href="sobre.html">Notícias</a></li>
-                <li class="navlink"><a href="contato.html">Contato</a></li>
-                <li class="navlink"><a href="login.html">Login</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <main>
-        <div class="video-container">
-            <video id="videohome" src="src/assets/video/home.mp4" autoplay loop muted></video>
-            <div class="text-overlay">
-                <h1 class="content_h1">Ocean Shield</h1>
-                <p class="content_text">Na Ocean Shield, unimos tecnologia, inovação e sustentabilidade para proteger nossos oceanos.</p>
-            </div>
-        </div>
-        <section class="problem">
-            <div class="content_problem" id="section1">
-                <h1 class="h1_problem">Poluição dos Oceanos</h1>
-                <p class="text_problem">
-                    Os oceanos enfrentam uma crise ambiental severa devido a múltiplos fatores que comprometem a saúde dos ecossistemas marinhos e, consequentemente, a vida humana. Entre os principais problemas estão a acidificação, a bioacumulação de metais pesados, a eutrofização, vazamentos de petróleo, o acúmulo de plástico e o aquecimento global. Esses problemas têm causado danos irreparáveis ao meio ambiente, afetando tanto a biodiversidade marinha quanto as populações humanas que dependem dos oceanos para alimentação, emprego e atividades econômicas.</p>
-            </div>
-            <div class="img_problem"></div>
-        </section>
-        <section class="problem">
-            <div class="content_problem" id="section2">
-                <h1 class="h1_problem">Qual a tecnologia ajuda a diminuir esse problema?</h1>
-                <p class="text_problem">
-                    Na Ocean Shield desenvolvemos soluções para informar sobre a poluição marinha e ajudar a reduzir seus efeitos. Neste site, você poderá encontar diversas informações em formas de gráficos, mapas e textos que lhe ajudem a compreender as consequências dos problemas ambientais.
-                    Além de ter a possibilidade de se conectar com outros pescadores, empresas e organizações em busca de desenvolver e financiar soluções para esses problemas.</p>
-            </div>
-            <div class="img_problem"></div>
-        </section>
-        <section class="problem">
-            <div class="content_problem" id="section3">
-                <h1 class="h1_problem">Quais os objetivos pretendemos alcançar?</h1>
-                <p class="text_problem">
-                    Os objetivos incluem a criação de métodos eficazes para capturar e visualizar dados sobre a saúde dos oceanos, promover a conscientização sobre a poluição marinha, informar sobre os impactos da acidificação e poluição nos ecossistemas marinhos, e fornecer informações que possam orientar ações para mitigar esses problemas.</p>
-            </div>
-            <div class="img_problem"></div>
-        </section>
-        <section class="problem">
-            <div class="content_problem" id="section4">
-                <h1 class="h1_problem">Quem buscamos ajudar?</h1>
-                <p class="text_problem">
-                    O público impactado inclui populações costeiras, pescadores, empresas que operam nos mares, indústrias poluentes, governos e organizações ambientais, além do público em geral que depende dos oceanos para subsistência e lazer.</p>
-            </div>
-            <div class="img_problem"></div>
-        </section>
-        <section class="problem">
-            <div class="content_problem" id="section5">
-                <h1 class="h1_problem">Quais os benefícios oferecidos pela solução?</h1>
-                <p class="text_problem">
-                    A solução oferece diversos benefícios, como:
+    <body>
+        <div id="preloader"></div>
+
+        <header id="header">
+            <img src="src/assets/img/logo/logo.png" alt="Logo Ocean Shield"
+                id="logo">
+            <nav class="navbar">
+                <div class="mobile-menu">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+                <ul class="nav-list">
+                    <li class="navlink"><a href="#video-container">Home</a></li>
+                    <li class="navlink"><a href="#estatisticas">Estatísticas</a></li>
+                    <li class="navlink"><a
+                            href="#animais">Animais</a></li>
+                    <li class="navlink"><a href="#fundo-noticias">Notícias</a></li>
+                    <li class="navlink"><a
+                            href="https://aqualink.org/map" target="_blank">Mapa</a></li>
+
+                    <li class="navlink"><a
+                            href="#container-contato">Contato</li>
+                        <li class="navlink"><a href="login.html">Login</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <main>
+                <div class="video-container">
+                    <video id="videohome" src="src/assets/video/home.mp4"
+                        autoplay
+                        loop muted></video>
+                    <div class="text-overlay">
+                        <h1 class="content_h1">Ocean Shield</h1>
+                        <p class="content_text">Na Ocean Shield, unimos
+                            tecnologia,
+                            inovação e sustentabilidade para proteger nossos
+                            oceanos.</p>
+                    </div>
+                </div>
+
+            </main>
+
+            <section class="container-box">
+                <div class="box left">
+
+                    <h3>Poluição dos Oceanos</h3>
+                    <p>Os oceanos enfrentam uma crise ambiental severa devido a
+                        múltiplos fatores que comprometem a saúde dos
+                        ecossistemas
+                        marinhos e, consequentemente, a vida humana. Entre os
+                        principais problemas estão a acidificação, a
+                        bioacumulação
+                        de metais pesados, a eutrofização, vazamentos de
+                        petróleo, o
+                        acúmulo de plástico e o aquecimento global. Esses
+                        problemas
+                        têm causado danos irreparáveis ao meio ambiente,
+                        afetando
+                        tanto a biodiversidade marinha quanto as populações
+                        humanas
+                        que dependem dos oceanos para alimentação, emprego e
+                        atividades econômicas.</p>
+
+                </div>
+
+                <div class="box right">
+                    <h3>Tecnologia para Reduzir a Poluição</h3>
+                    <p>Nós da Ocean Shield desenvolvemos soluções para informar
+                        sobre a poluição marinha e ajudar a reduzir seus
+                        efeitos.
+                        Vamos usar sensores para medir o dióxido de carbono e a
+                        temperatura da água. Além disso, criaremos uma
+                        ferramenta
+                        para verificar se a água atende aos padrões globais. Em
+                        nosso site, você encontrará informações sobre a poluição
+                        oceânica, apresentadas com gráficos e tabelas.</p>
+                </div>
+                <div class="box left">
+                    <h3>Objetivos</h3>
+                    <p>Os objetivos incluem a criação de métodos eficazes para
+                        capturar e visualizar dados sobre a saúde dos oceanos,
+                        promover a conscientização sobre a poluição marinha,
+                        informar sobre os impactos da acidificação e poluição
+                        nos
+                        ecossistemas marinhos, e fornecer informações que possam
+                        orientar ações para mitigar esses problemas.</p>
+                </div>
+                <div class="box right">
+                    <h3>Público Alvo</h3>
+                    <p>O público impactado inclui populações costeiras,
+                        pescadores,
+                        empresas que operam nos mares, indústrias poluentes,
+                        governos e organizações ambientais, além do público em
+                        geral
+                        que depende dos oceanos para subsistência e lazer.</p>
+                </div>
+                <div class="box left">
+                    <h3>Benefícios</h3>
+                    <p>A solução oferece diversos benefícios, como:</p>
                     <ol>
-                        <li class="list_problem">Monitoramento contínuo da qualidade da água dos oceanos.</li>
-                        <li class="list_problem">Fornecimento de dados precisos para orientar políticas públicas e ações de mitigação.</li>
-                        <li class="list_problem">Aumento da conscientização sobre os impactos da poluição marinha.</li>
-                        <li class="list_problem">Apoio à sustentabilidade e conservação dos ecossistemas marinhos.</li>
-                        <li class="list_problem">Redução dos riscos para a saúde humana e para a economia local ligada aos recursos marinhos.</li>
+                        <li class="list_problem">Monitoramento contínuo da
+                            qualidade
+                            da água dos oceanos.</li>
+                        <li class="list_problem">Fornecimento de dados precisos
+                            para
+                            orientar políticas públicas e ações de
+                            mitigação.</li>
+                        <li class="list_problem">Aumento da conscientização
+                            sobre os
+                            impactos da poluição marinha.</li>
+                        <li class="list_problem">Apoio à sustentabilidade e
+                            conservação dos ecossistemas marinhos.</li>
+                        <li class="list_problem">Redução dos riscos para a saúde
+                            humana e para a economia local ligada aos recursos
+                            marinhos.</li>
                     </ol>
-                </p>
-            </div>
-            <div class="img_problem"></div>
-        </section>
-        <section class="problem">
-            <div class="content_problem" id="section6">
-                <h1 class="h1_problem">Como essa solução poderão ajudá-lo</h1>
-                <p class="text_problem" id="text_right">
-                    Nossa solução pode ajudar no dia a dia das pessoas ao:
+                </div>
+                <div class="box right">
+                    <h3>Ajuda no Dia a Dia</h3>
+                    <p>Nossa solução pode ajudar no dia a dia das pessoas
+                        ao:</p>
                     <ol>
-                        <li class="list_problem">Proporcionar informações acessíveis e compreensíveis sobre a qualidade da água e os níveis de poluição.</li>
-                        <li class="list_problem">Alertar sobre áreas críticas que necessitam de intervenção urgente.</li>
-                        <li class="list_problem">Apoiar pescadores e comunidades costeiras na proteção de suas fontes de sustento.</li>
-                        <li class="list_problem">Incentivar práticas industriais e agrícolas mais sustentáveis, reduzindo a liberação de poluentes.</li>
-                        <li class="list_problem">Contribuir para a preservação da biodiversidade marinha, essencial para a saúde do planeta e para as futuras gerações.</li>
+                        <li class="list_problem">Proporcionar informações
+                            acessíveis
+                            e compreensíveis sobre a qualidade da água e os
+                            níveis
+                            de poluição.</li>
+                        <li class="list_problem">Alertar sobre áreas críticas
+                            que
+                            necessitam de intervenção urgente.</li>
+                        <li class="list_problem">Apoiar pescadores e comunidades
+                            costeiras na proteção de suas fontes de
+                            sustento.</li>
+                        <li class="list_problem">Incentivar práticas industriais
+                            e
+                            agrícolas mais sustentáveis, reduzindo a liberação
+                            de
+                            poluentes.</li>
+                        <li class="list_problem">Contribuir para a preservação
+                            da
+                            biodiversidade marinha, essencial para a saúde do
+                            planeta e para as futuras gerações.</li>
                     </ol>
-                </p>
+                </div>
+            </section>
+
+            <div class="grafico"  id="estatisticas" >
+                <h1>Poluição nos Oceanos</h1>
+                <canvas id="oceanPollutionChart"></canvas>
+                <a
+                    href="https://brasil.oceana.org/wp-content/uploads/sites/23/umoceanolivredeplastico_oceana_port_web_18dez2020.pdf">Link
+                    para mais informações</a>
             </div>
-            <div class="img_problem"></div>
-        </section>
 
-    </main>
-    <footer>
-        <div class="waves">
-            <div class="wave" id="wave1"></div>
-        </div>
+            <h1 class="graf-esp">Espécies marinhas ameaçadas de extinção</h1>
+            <div class="chart-container">
 
-        <div class="zoom">
-            <ul class="social_icon">
-                <li><a href="#"><ion-icon
-                            name="logo-facebook"></ion-icon>
-                    </a></li>
+                <canvas id="sharkRayChart"></canvas>
 
-                <li><a href="#"><ion-icon
-                            name="logo-twitter"></ion-icon>
-                    </a></li>
+                <div class="legend">
+                    <div class="legend-item">
+                        <span class="legend-color"
+                            style="background-color: #FF0000;"></span>
+                        25 espécies criticamente ameaçadas
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color"
+                            style="background-color: #FFA500;"></span>
+                        43 espécies ameaçadas de extinção
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color"
+                            style="background-color: #FFFF00;"></span>
+                        113 espécies vulneráveis
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color"
+                            style="background-color: #ADFF2F;"></span>
+                        129 espécies quase ameaçadas
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color"
+                            style="background-color: #00FF00;"></span>
+                        229 espécies menos preocupantes
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color"
+                            style="background-color: #808080;"></span>
+                        Dados deficientes sobre 465 espécies
+                    </div>
+                </div>
 
-                <li><a href="#"><ion-icon
-                            name="logo-linkedin"></ion-icon>
-                    </a></li>
+            </div>
+            <a
+                href="https://assets.wwf.org.uk/downloads/living_blue_planet_report_2015.pdf"
+                class="link2">Link para mais informações</a>
 
-                <li><a href="#"><ion-icon
-                            name="logo-instagram"></ion-icon>
-                    </a></li>
-            </ul>
+            <div id="div-categorias">
+                <div class="categoria-texto">
+                    <p id="categoria">Espécies</p>
+                </div>
 
-        </div>
+                <section id="animais">
 
-        <ul class="menu">
-            <li><a href="#">Termos</a></li>
-            <li><a href="#">Políticas</a></li>
-            <li><a href="#">Temas</a></li>
-            <li><a href="#">Cookies</a></li>
-            <li><a href="#">Parceiros</a></li>
-        </ul>
+                    <div class="imagens-animais" id="baleia">
+                        <img class="imagem-circular"
+                            src="src/assets/img/animais/baleia-azul-animal.jpg">
+                        <div class="overlay">
+                            <p class="palavra">Baleia-Azul</p>
+                        </div>
+                    </div>
+                    <div id="video-baleia" class="video-container-animais">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/DVVXQBp5pzU?si=JXH-wgdrGpYqdm4v"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen></iframe>
+                    </div>
 
-        <p class="rodape">© 2024 - Todos os direitos reservados</p>
-    </footer>
+                    <div class="imagens-animais" id="tartaruga">
+                        <img class="imagem-circular"
+                            src="src/assets/img/animais/tartaruga.png">
+                        <div class="overlay">
+                            <p class="palavra">Tartaruga</p>
+                        </div>
+                    </div>
+                    <div id="video-tartaruga" class="video-container">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/mOk6Xby5RdE?si=pLiU3la1mIVmMVTt"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen></iframe>
+                    </div>
 
-    <script>
+                    <div class="imagens-animais" id="tubarao">
+
+                        <img class="imagem-circular"
+                            src="src/assets/img/animais/tubarao.webp">
+                        <div class="overlay">
+                            <p class="palavra">Tubarão</p>
+                        </div>
+                    </div>
+                    <div id="video-tubarao" class="video-container">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/GGR8syv6C4c?si=ZANVwDNbKcDpLqX_"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen></iframe>
+                    </div>
+
+                    <div class="imagens-animais" id="golfinho">
+                        <img class="imagem-circular"
+                            src="src/assets/img/animais/golfinho.jpg">
+                        <div class="overlay">
+                            <p class="palavra">Golfinho</p>
+                        </div>
+                    </div>
+                    <div id="video-golfinho" class="video-container">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/WVn9NKD1JV0?si=mEZKjCZqhhr1Zfan"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen></iframe>
+                    </div>
+
+                    <div class="imagens-animais" id="peixinho">
+
+                        <img class="imagem-circular"
+                            src="src/assets/img/animais/peixinhos.jpg">
+                        <div class="overlay">
+                            <p class="palavra">Peixinhos</p>
+                        </div>
+                    </div>
+                    <div id="video-peixinho" class="video-container">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/KcW8j5aC_LQ?si=wVNpCUNGCmC2G-JQ"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen></iframe>
+                    </div>
+
+                    <div class="imagens-animais" id="pinguim">
+                        <img class="imagem-circular"
+                            src="src/assets/img/animais/pinguins.jpg">
+                        <div class="overlay">
+                            <p class="palavra">Pinguim</p>
+                        </div>
+                    </div>
+                    <div id="video-pinguim" class="video-container">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/xjMbMRlbgQk?si=3CkvDROPmhiLuv6X"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen></iframe>
+                    </div>
+
+                    <div class="imagens-animais" id="corais">
+                        <img class="imagem-circular"
+                            src="src/assets/img/animais/corais.jpg">
+                        <div class="overlay">
+                            <p class="palavra">Corais</p>
+                        </div>
+                    </div>
+                    <div id="video-corais" class="video-container">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/19360XoYGdA?si=yPAdiD_VsxFOR_Cb"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen></iframe>
+                    </div>
+
+                    <div class="imagens-animais" id="estrela-do-mar">
+                        <img class="imagem-circular"
+                            src="src/assets/img/animais/estrela-do-mar.jpg">
+                        <div class="overlay">
+                            <p class="palavra">Estrela-do-Mar</p>
+                        </div>
+                    </div>
+                    <div id="video-estrela-do-mar" class="video-container">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/YqSISLFn7nU?si=BbpQDk5iyZyKjBbI"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen></iframe>
+                    </div>
+
+                </section>
+
+                <div id="fundo-noticias">
+                    <h1 class="noticias">Notícias</h1>
+                    <div class="containerslide swiper">
+                        <div class="slide-container">
+
+                            <div class="card-wrapper swiper-wrapper">
+                                <div class="card swiper-slide">
+                                    <a
+                                        href="https://www.cnnbrasil.com.br/internacional/aquecimento-dos-oceanos-esta-em-niveis-recordes-ha-um-ano-entenda-o-risco/
+                        ">
+                                        <div class="image-box">
+                                            <img
+                                                src="src/assets/img/slide/noticia1.webp"
+                                                alt="noticia1">
+                                        </div>
+                                        <div class="profile-details">
+                                            <img
+                                                src="src/assets/img/slide/imagem2.jpg"
+                                                alt="noticia1">
+                                            <div class="name-job">
+                                                <h2 class="name">Aquecimento dos
+                                                    oceanos
+                                                    está em níveis recordes há
+                                                    um
+                                                    ano</h2>
+
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="card swiper-slide">
+                                    <a href="
+                        https://ciclovivo.com.br/planeta/meio-ambiente/variacao-na-temperatura-do-oceano-ameaca-equilibrio-marinho/">
+                                        <div class="image-box">
+                                            <img
+                                                src="src/assets/img/slide/noticia2.webp"
+                                                alt="noticia2">
+                                        </div>
+                                        <div class="profile-details">
+                                            <img
+                                                src="src/assets/img/slide/imagem2.jpg"
+                                                alt="noticia3">
+                                            <div class="name-job">
+                                                <h2 class="name">Variação na
+                                                    temperatura
+                                                    do oceano ameaça equilíbrio
+                                                    marinho</h2>
+
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="card swiper-slide">
+                                    <a
+                                        href="https://www.correiobraziliense.com.br/brasil/2022/10/5046373-poluicao-se-torna-ameaca-crescente-a-vida-nos-oceanos-entenda-os-riscos.html">
+                                        <div class="image-box">
+                                            <img
+                                                src="src/assets/img/slide/noticia3.jpg"
+                                                alt="noticia3">
+                                        </div>
+                                        <div class="profile-details">
+                                            <img
+                                                src="src/assets/img/slide/imagem2.jpg"
+                                                alt="noticia2">
+                                            <div class="name-job">
+                                                <h2 class="name">Poluição se
+                                                    torna
+                                                    ameaça crescente à vida nos
+                                                    oceanos</h2>
+
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="card swiper-slide">
+                                    <a
+                                        href="https://veja.abril.com.br/ciencia/perda-de-biodiversidade-marinha-pode-afetar-desenvolvimento-diz-relatorio">
+                                        <div class="image-box">
+                                            <img
+                                                src="src/assets/img/slide/noticia4.webp"
+                                                alt="noticia4">
+                                        </div>
+                                        <div class="profile-details">
+                                            <img
+                                                src="src/assets/img/slide/imagem2.jpg"
+                                                alt="imagem2">
+                                            <div class="name-job">
+                                                <h2 class="name">Perda de
+                                                    biodiversidade
+                                                    marinha pode afetar
+                                                    desenvolvimento</h2>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="card swiper-slide">
+                                    <a
+                                        href="https://nautica.com.br/conheca-5-especies-de-animais-marinhos-atualmente-ameacados-de-extincao/">
+                                        <div class="image-box">
+                                            <img
+                                                src="src/assets/img/slide/noticia5.jpg"
+                                                alt="noticia5">
+                                        </div>
+                                        <div class="profile-details">
+                                            <img
+                                                src="src/assets/img/slide/imagem2.jpg"
+                                                alt="imagem2">
+                                            <div class="name-job">
+                                                <h2 class="name">Conheça 5
+                                                    espécies de
+                                                    animais marinhos atualmente
+                                                    ameaçados de extinção</h2>
+
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="card swiper-slide">
+                                    <a
+                                        href="https://canal38.com.br/dia-mundial-dos-oceanos-reflexao-e-acao-para-a-preservacao-dos-mares/">
+                                        <div class="image-box">
+                                            <img
+                                                src="src/assets/img/slide/noticia6.webp"
+                                                alt="noticia6">
+                                        </div>
+                                        <div class="profile-details">
+                                            <img
+                                                src="src/assets/img/slide/imagem2.jpg"
+                                                alt="imagem2">
+                                            <div class="name-job">
+                                                <h2 class="name">Dia Mundial dos
+                                                    Oceanos: Reflexão e Ação
+                                                    para a
+                                                    Preservação dos Mares</h2>
+
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="swiper-button-next swiper-navBtn"></div>
+                        <div class="swiper-button-prev swiper-navBtn"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+
+                <main>
+                    <div id="container-contato" class="container-contato">
+                        <span class="big-circle"></span>
+                        <img src="src/assets/img/contato/shape.png"
+                            class="square"
+                            alt="contato" />
+                        <div class="form">
+                            <div class="contact-info">
+                                <h3 class="title">Ajude nossa comunidade!</h3>
+                                <p class="text-contato">
+                                    Tem uma sugestão, dúvida, denúncia ou
+                                    história
+                                    de sucesso para compartilhar? Entre em
+                                    contato
+                                    conosco! Adoraríamos ouvir e poder te
+                                    ajudar.
+                                </p>
+
+                                <div class="info">
+                                    <div class="information">
+                                        <img
+                                            src="src/assets/img/contato/location.png"
+                                            class="icon" alt="localizacao" />
+                                        <p>Rua nossoendereco, SP - 1000</p>
+                                    </div>
+                                    <div class="information">
+                                        <img
+                                            src="src/assets/img/contato/email.png"
+                                            class="icon" alt="email" />
+                                        <p>oceanshield@gmail.com</p>
+                                    </div>
+                                    <div class="information">
+                                        <img
+                                            src="src/assets/img/contato/phone.png"
+                                            class="icon" alt="phone" />
+                                        <p>(11)XXXX-XXXX</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="contact-form">
+                                <span class="circle one"></span>
+                                <span class="circle two"></span>
+
+                                <form action="index.html" autocomplete="off">
+                                    <h3 class="title">Entre em contato
+                                        conosco</h3>
+                                    <div class="input-container">
+                                        <input type="text" name="name"
+                                            class="input" />
+                                        <label for>Nome</label>
+                                        <span>Nome</span>
+                                    </div>
+                                    <div class="input-container">
+                                        <input type="email" name="email"
+                                            class="input" />
+                                        <label for>E-mail</label>
+                                        <span>E-mail</span>
+                                    </div>
+                                    <div class="input-container">
+                                        <input type="tel" name="phone"
+                                            class="input" />
+                                        <label for>Telefone</label>
+                                        <span>Telefone</span>
+                                    </div>
+                                    <div class="input-container textarea">
+                                        <textarea name="message"
+                                            class="input"></textarea>
+                                        <label for>Mensagem</label>
+                                        <span>Mensagem</span>
+                                    </div>
+                                    <input type="submit" value="Enviar"
+                                        class="btn" />
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+
+                <div class="main">
+
+                    <footer>
+                        <div class="waves">
+                            <div class="wave" id="wave1"></div>
+                        </div>
+
+                        <div class="zoom">
+                            <ul class="social_icon">
+                                <li><a href="#"><ion-icon
+                                            name="logo-facebook"></ion-icon>
+                                    </a></li>
+
+                                <li><a href="#"><ion-icon
+                                            name="logo-twitter"></ion-icon>
+                                    </a></li>
+
+                                <li><a href="#"><ion-icon
+                                            name="logo-linkedin"></ion-icon>
+                                    </a></li>
+
+                                <li><a href="#"><ion-icon
+                                            name="logo-instagram"></ion-icon>
+                                    </a></li>
+                            </ul>
+
+                        </div>
+
+                        <ul class="menu">
+                            <li><a href="#">Termos</a></li>
+                            <li><a href="#">Políticas</a></li>
+                            <li><a href="#">Temas</a></li>
+                            <li><a href="#">Cookies</a></li>
+                            <li><a href="#">Parceiros</a></li>
+                        </ul>
+
+                        <p class="rodape">© 2024 - Todos os direitos
+                            reservados</p>
+
+                    </footer>
+
+                </div>
+
+                <script type="module"
+                    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+                <script nomodule
+                    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+                <script src="src/js/swiper-bundle.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                <script
+                    src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+                <script src="src/js/animais.js"></script>
+                <script src="src/js/chart.js"></script>
+                <script src="src/js/slide.js"></script>
+                <script src="src/js/script.js"></script>
+                <script>
         // Script para remover o preloader após a página carregar
         var preloader = document.getElementById('preloader');
         window.addEventListener('load', function() {
             preloader.style.display = 'none';
         });
     </script>
-    <script src="src/js/script.js"></script>
-</body>
+                <script src="src/js/script.js"></script>
+                <script src="src/js/contato.js"></script>
+                <script
+                    src="https://kit.fontawesome.com/64d58efce2.js"
+                    crossorigin="anonymous"></script>
 
-</html>
+                <script>
+        // Script para remover o preloader após a página carregar
+        var preloader = document.getElementById('preloader');
+        window.addEventListener('load', function() {
+            preloader.style.display = 'none';
+        });
+    </script>
+                <script src="src/js/script.js"></script>
+            </body>
+
+        </html>
